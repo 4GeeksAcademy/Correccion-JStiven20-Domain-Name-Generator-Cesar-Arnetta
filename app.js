@@ -1,11 +1,11 @@
+//Correcciones : 
+//  Cambiar let por const, ya que, no cambian las variables.
+//  eliminar comentarios debido a la simplicidad del codigo.
 
-// Se ha implentado fuera del la carpeta assets para probarlo con el node app.js
-// se hizo un DOM del código en HTML también
-
-let pronoun = ['the', 'our'];
-let adj = ['great', 'big'];
-let noun = ['jogger', 'racoon'];
-let domain = ['.com', '.net']
+const pronoun = ['the', 'our'];
+const adj = ['great', 'big'];
+const noun = ['jogger', 'racoon'];
+const domain = ['.com', '.net']
 
 const findEveryElementOfArray = () => {
     pronoun.forEach((p) => {
@@ -13,8 +13,6 @@ const findEveryElementOfArray = () => {
             noun.forEach((n) => {
                 domain.forEach((d) => {
                     console.log(`${p}${a}${n}${d}`)
-                    // Hago todos los loops que sean necesarios para recorrer las variables
-                    // luego las indico en el orden que quiero que aparezcan en la consola
                 });
             });
         });
